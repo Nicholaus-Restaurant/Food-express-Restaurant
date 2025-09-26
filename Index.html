@@ -812,5 +812,828 @@
             </nav>
         </div>
     </header>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>Delicious Foods, Anytime, Anywhere</h1>
+            <p>Order African, American, and Chinese favorites delivered hot & fresh</p>
+            <a href="#menu" class="btn">Explore Menu</a>
+        </div>
+    </section>
 
+    <!-- Menu Section -->
+    <section id="menu" class="section">
+        <div class="container">
+            <h2>Our Menu</h2>
+            <div class="menu-filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="african">African</button>
+                <button class="filter-btn" data-filter="american">American</button>
+                <button class="filter-btn" data-filter="chinese">Chinese</button>
+            </div>
+            <div class="food-grid">
+                <!-- African Foods -->
+                <div class="card food-card" data-category="african">
+                    <img src="https://images.unsplash.com/photo-1563245372-f21724e3856d?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Ugali">
+                    <div class="food-info">
+                        <h3>Ugali with Sukuma Wiki</h3>
+                        <div class="food-price">$6.00</div>
+                        <button class="add-to-cart" data-name="Ugali" data-price="6">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="card food-card" data-category="african">
+                    <img src="https://images.unsplash.com/photo-1598514983537-86e6ac6be39a?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Fried Fish">
+                    <div class="food-info">
+                        <h3>Fried Tilapia Fish</h3>
+                        <div class="food-price">$9.00</div>
+                        <button class="add-to-cart" data-name="Fried Fish" data-price="9">Add to Cart</button>
+                    </div>
+                </div>
+                
+                <!-- American Foods -->
+                <div class="card food-card" data-category="american">
+                    <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ca4b?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Pizza">
+                    <div class="food-info">
+                        <h3>Pepperoni Pizza</h3>
+                        <div class="food-price">$12.00</div>
+                        <button class="add-to-cart" data-name="Pizza" data-price="12">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="card food-card" data-category="american">
+                    <img src="https://images.unsplash.com/photo-1553979459-d2229ba7433b?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Burger">
+                    <div class="food-info">
+                        <h3>Cheeseburger</h3>
+                        <div class="food-price">$10.00</div>
+                        <button class="add-to-cart" data-name="Burger" data-price="10">Add to Cart</button>
+                    </div>
+                </div>
+                
+                <!-- Chinese Foods -->
+                <div class="card food-card" data-category="chinese">
+                    <img src="https://images.unsplash.com/photo-1551183053-bf91a1d81141?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Noodles">
+                    <div class="food-info">
+                        <h3>Chow Mein Noodles</h3>
+                        <div class="food-price">$9.50</div>
+                        <button class="add-to-cart" data-name="Noodles" data-price="9.5">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="card food-card" data-category="chinese">
+                    <img src="https://images.unsplash.com/photo-1585032226651-759b368d7246?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Dumplings">
+                    <div class="food-info">
+                        <h3>Steamed Dumplings</h3>
+                        <div class="food-price">$7.00</div>
+                        <button class="add-to-cart" data-name="Dumplings" data-price="7">Add to Cart</button>
+                    </div>
+                </div>
+                
+                <!-- Additional Foods (Visible to all) -->
+                <div class="card food-card" data-category="american">
+                    <img src="https://images.unsplash.com/photo-1555949963-aa79dcee981c?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Hot Dog">
+                    <div class="food-info">
+                        <h3>Classic Hot Dog</h3>
+                        <div class="food-price">$5.00</div>
+                        <button class="add-to-cart" data-name="Hot Dog" data-price="5">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="card food-card" data-category="african">
+                    <img src="https://images.unsplash.com/photo-1598514983673-6a0cfa4db2ce?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Chapati">
+                    <div class="food-info">
+                        <h3>Chapati with Beans</h3>
+                        <div class="food-price">$4.50</div>
+                        <button class="add-to-cart" data-name="Chapati" data-price="4.5">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="card food-card" data-category="chinese">
+                    <img src="https://images.unsplash.com/photo-1585032226651-759b368d7246?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Spring Rolls">
+                    <div class="food-info">
+                        <h3>Spring Rolls</h3>
+                        <div class="food-price">$6.50</div>
+                        <button class="add-to-cart" data-name="Spring Rolls" data-price="6.5">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Premium Products Section (Visible only when logged in) -->
+            <div class="premium-section" id="premiumSection">
+                <div class="premium-header">
+                    <h2><i class="fas fa-crown"></i> Premium Products</h2>
+                    <p>Exclusive items available for our registered customers</p>
+                </div>
+                <div class="food-grid">
+                    <div class="card food-card" data-category="premium">
+                        <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Wine">
+                        <div class="food-info">
+                            <h3>Premium Red Wine</h3>
+                            <div class="food-price">$25.00</div>
+                            <button class="add-to-cart" data-name="Premium Red Wine" data-price="25">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="card food-card" data-category="premium">
+                        <img src="https://images.unsplash.com/photo-1536935338788-846bb9981813?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Champagne">
+                        <div class="food-info">
+                            <h3>French Champagne</h3>
+                            <div class="food-price">$35.00</div>
+                            <button class="add-to-cart" data-name="French Champagne" data-price="35">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="card food-card" data-category="premium">
+                        <img src="https://images.unsplash.com/photo-1589010588553-46e8e7c21788?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Whiskey">
+                        <div class="food-info">
+                            <h3>Scotch Whiskey</h3>
+                            <div class="food-price">$30.00</div>
+                            <button class="add-to-cart" data-name="Scotch Whiskey" data-price="30">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="card food-card" data-category="premium">
+                        <img src="https://images.unsplash.com/photo-1470337458703-46ad1756a187?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Cocktails">
+                        <div class="food-info">
+                            <h3>Premium Cocktails</h3>
+                            <div class="food-price">$12.00</div>
+                            <button class="add-to-cart" data-name="Premium Cocktails" data-price="12">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cart Section -->
+    <section id="cart" class="section">
+        <div class="container">
+            <h2>Your Cart</h2>
+            <div class="cart-section">
+                <div class="cart-items" id="cartItems">
+                    <!-- Cart items will be added here dynamically -->
+                    <p class="empty-cart-message">Your cart is empty. Add some delicious food!</p>
+                </div>
+                <div class="cart-total" id="cartTotal">Total: $0.00</div>
+                <button class="btn checkout-btn" id="checkoutBtn">Proceed to Checkout</button>
+            </div>
+
+            <!-- Payment Section -->
+            <div class="payment-section" id="paymentSection">
+                <h3>Select Payment Method</h3>
+                <div class="payment-methods">
+                    <div class="payment-method" data-method="card">
+                        <i class="fas fa-credit-card"></i>
+                        <div>Credit Card</div>
+                    </div>
+                    <div class="payment-method" data-method="paypal">
+                        <i class="fab fa-paypal"></i>
+                        <div>PayPal</div>
+                    </div>
+                    <div class="payment-method" data-method="mobile">
+                        <i class="fas fa-mobile-alt"></i>
+                        <div>Mobile Payment</div>
+                    </div>
+                </div>
+
+                <!-- PIN Entry Section -->
+                <div class="pin-section" id="pinSection">
+                    <h3>Enter PIN to Confirm Purchase</h3>
+                    <div class="pin-dots" id="pinDots">
+                        <div class="pin-dot"></div>
+                        <div class="pin-dot"></div>
+                        <div class="pin-dot"></div>
+                        <div class="pin-dot"></div>
+                    </div>
+                    <input type="text" class="pin-input" id="pinInput" maxlength="4" readonly>
+                    <div class="pin-keypad">
+                        <button class="pin-key" data-key="1">1</button>
+                        <button class="pin-key" data-key="2">2</button>
+                        <button class="pin-key" data-key="3">3</button>
+                        <button class="pin-key" data-key="4">4</button>
+                        <button class="pin-key" data-key="5">5</button>
+                        <button class="pin-key" data-key="6">6</button>
+                        <button class="pin-key" data-key="7">7</button>
+                        <button class="pin-key" data-key="8">8</button>
+                        <button class="pin-key" data-key="9">9</button>
+                        <button class="pin-key" data-key="clear">C</button>
+                        <button class="pin-key" data-key="0">0</button>
+                        <button class="pin-key" data-key="enter">✓</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Delivery Tracking -->
+    <section id="delivery" class="section">
+        <div class="container">
+            <h2>Delivery Tracking</h2>
+            <div class="delivery-tracking">
+                <div class="delivery-time" id="deliveryTime">Time Remaining: 30:00</div>
+                <div class="progress-container">
+                    <div class="progress-bar" id="progressBar"></div>
+                    <div class="delivery-car" id="deliveryCar">🚗</div>
+                </div>
+                <p>Your order is being prepared and will be delivered soon!</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Customer Dashboard (Visible after login) -->
+    <section id="dashboard" class="section">
+        <div class="container">
+            <div class="dashboard" id="customerDashboard">
+                <div class="dashboard-header">
+                    <h2>Customer Dashboard</h2>
+                    <button class="btn" id="logoutBtn">Logout</button>
+                </div>
+                <div class="dashboard-content">
+                    <div class="account-info">
+                        <h3>Account Information</h3>
+                        <p><strong>Name:</strong> <span id="userName">John Doe</span></p>
+                        <p><strong>Email:</strong> <span id="userEmail">john@example.com</span></p>
+                        <p><strong>Member Since:</strong> <span id="joinDate">January 2023</span></p>
+                        <p><strong>Loyalty Points:</strong> <span id="loyaltyPoints">450</span></p>
+                        <p><strong>Premium Status:</strong> <span style="color:var(--primary);">Active</span></p>
+                    </div>
+                    <div class="music-player">
+                        <h3>Music Player</h3>
+                        <p>Enjoy music while waiting for your delivery</p>
+                        <div class="music-controls">
+                            <button class="music-btn" id="prevBtn"><i class="fas fa-backward"></i></button>
+                            <button class="music-btn" id="playBtn"><i class="fas fa-play"></i></button>
+                            <button class="music-btn" id="nextBtn"><i class="fas fa-forward"></i></button>
+                        </div>
+                        <div class="playlist">
+                            <div class="playlist-item active">Relaxing Music 1</div>
+                            <div class="playlist-item">Upbeat Tunes</div>
+                            <div class="playlist-item">Chill Vibes</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ladies Gallery (Visible after login) -->
+    <section id="ladies" class="section">
+        <div class="container">
+            <div class="ladies-gallery" id="ladiesGallery">
+                <h2>Meet Our Hostesses</h2>
+                <p>Chat with our friendly hostesses while waiting for your order</p>
+                <div class="ladies-grid">
+                    <div class="lady-card" data-lady="sarah">
+                        <img src="https://images.unsplash.com/photo-1494790108755-2616b612b786?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Sarah">
+                        <div class="lady-name">Sarah</div>
+                        <div class="lady-age">25 • Model</div>
+                    </div>
+                    <div class="lady-card" data-lady="emma">
+                        <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Emma">
+                        <div class="lady-name">Emma</div>
+                        <div class="lady-age">27 • Dancer</div>
+                    </div>
+                    <div class="lady-card" data-lady="mia">
+                        <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Mia">
+                        <div class="lady-name">Mia</div>
+                        <div class="lady-age">24 • Student</div>
+                    </div>
+                    <div class="lady-card" data-lady="lily">
+                        <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Lily">
+                        <div class="lady-name">Lily</div>
+                        <div class="lady-age">26 • Artist</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Login Modal -->
+    <div class="modal" id="loginModal">
+        <div class="modal-content">
+            <span class="close-modal" id="closeLogin">&times;</span>
+            <h2>Login to Food Express</h2>
+            <div class="form-group">
+                <label for="loginEmail">Email</label>
+                <input type="email" id="loginEmail" placeholder="Enter your email">
+            </div>
+            <div class="form-group">
+                <label for="loginPassword">Password</label>
+                <input type="password" id="loginPassword" placeholder="Enter your password">
+            </div>
+            <button class="btn" id="loginBtn" style="width:100%;">Login</button>
+            <p style="text-align:center; margin-top:15px;">Demo: nicholausgabriel123@gmail.com / Nick*123</p>
+        </div>
+    </div>
+
+    <!-- Customer Service Chat -->
+    <div class="chat-toggle" id="supportToggle">
+        <i class="fas fa-headset"></i>
+    </div>
+    <div class="chat-modal" id="supportChat">
+        <div class="chat-header">
+            <h3>Customer Service</h3>
+            <span class="close-modal" id="closeSupport">&times;</span>
+        </div>
+        <div class="chat-messages" id="supportMessages">
+            <div class="message support">Hello! How can we help you today?</div>
+        </div>
+        <div class="chat-input">
+            <input type="text" id="supportInput" placeholder="Type your message...">
+            <button id="sendSupport"><i class="fas fa-paper-plane"></i></button>
+        </div>
+    </div>
+
+    <!-- Lady Chat -->
+    <div class="chat-modal" id="ladyChat">
+        <div class="chat-header">
+            <h3 id="ladyChatTitle">Chat with Sarah</h3>
+            <span class="close-modal" id="closeLadyChat">&times;</span>
+        </div>
+        <div class="chat-messages" id="ladyMessages">
+            <div class="message lady">Hi there! Thanks for reaching out. How can I make your day better? 😊</div>
+        </div>
+        <div class="chat-input">
+            <input type="text" id="ladyInput" placeholder="Type your message...">
+            <button id="sendLady"><i class="fas fa-paper-plane"></i></button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer style="background:var(--secondary); color:white; padding:40px 0; text-align:center;">
+        <div class="container">
+            <p>&copy; 2023 Food Express. All rights reserved.</p>
+            <p>Delivering happiness to your doorstep!</p>
+        </div>
+    </footer>
+
+    <script>
+   // ===== GLOBAL VARIABLES =====
+        let cart = [];
+        let isLoggedIn = false;
+        let deliveryInterval;
+        let deliverySeconds = 30 * 60; // 30 minutes
+        let currentLady = null;
+        let musicPlaying = false;
+        let selectedPaymentMethod = null;
+        let pinCode = '';
+
+        // Expanded response arrays
+        const ladyResponses = [
+            "That sounds interesting! Tell me more about that.",
+            "I love getting to know our customers better!",
+            "You have a great sense of humor! 😄",
+            "I'm here to make your wait more enjoyable!",
+            "Your food should be arriving soon! In the meantime, let's chat!",
+            "I appreciate you taking the time to chat with m today!",
+            "That's a fascinating perspective! I'd love to hear more.",
+            "You seem like a really interesting person!",
+            "I'm enjoying our conversation! What else is on your mind?",
+            "That's a great question! Let me think about that for a moment.",
+            "I'm here to keep you company while you wait for your delicious food!",
+            "You have excellent taste in food! What's your favorite cuisine?",
+            "I'm always happy to chat with our valued customers like you!",
+            "That's a wonderful story! Thanks for sharing it with me.",
+            "I can tell you're a food lover just like me! What's your go-to comfort food?"
+        ];
+
+        const supportResponses = [
+            "Thank you for your message. How can we assist you?",
+            "We appreciate your feedback. Is there anything else you need?",
+            "Our team will get back to you shortly. Thank you for your patience.",
+            "I understand your concern. Let me check that for you.",
+            "Thanks for reaching out! We're here to help.",
+            "I'll look into that right away for you.",
+            "That's a great question! Let me find the best answer for you.",
+            "I appreciate you bringing this to our attention.",
+            "I can definitely help you with that!",
+            "Let me check our system for the most up-to-date information.",
+            "I understand how important this is to you. Let me assist.",
+            "Thanks for your patience while I look into this for you.",
+            "I want to make sure I fully understand your request.",
+            "I'll do my best to resolve this for you quickly.",
+            "Your satisfaction is our top priority. Let me help."
+        ];
+
+        // ===== DOM ELEMENTS =====
+        const loginModal = document.getElementById('loginModal');
+        const loginLink = document.getElementById('loginLink');
+        const closeLogin = document.getElementById('closeLogin');
+        const loginBtn = document.getElementById('loginBtn');
+        const loginEmail = document.getElementById('loginEmail');
+        const loginPassword = document.getElementById('loginPassword');
+        
+        const dashboardLink = document.getElementById('dashboardLink');
+        const customerDashboard = document.getElementById('customerDashboard');
+        const logoutBtn = document.getElementById('logoutBtn');
+        
+        const ladiesGallery = document.getElementById('ladiesGallery');
+        const ladyCards = document.querySelectorAll('.lady-card');
+        const ladyChat = document.getElementById('ladyChat');
+        const closeLadyChat = document.getElementById('closeLadyChat');
+        const ladyChatTitle = document.getElementById('ladyChatTitle');
+        const ladyMessages = document.getElementById('ladyMessages');
+        const ladyInput = document.getElementById('ladyInput');
+        const sendLady = document.getElementById('sendLady');
+        
+        const supportToggle = document.getElementById('supportToggle');
+        const supportChat = document.getElementById('supportChat');
+        const closeSupport = document.getElementById('closeSupport');
+        const supportMessages = document.getElementById('supportMessages');
+        const supportInput = document.getElementById('supportInput');
+        const sendSupport = document.getElementById('sendSupport');
+        
+        const cartItems = document.getElementById('cartItems');
+        const cartTotal = document.getElementById('cartTotal');
+        const cartBadge = document.querySelector('.cart-badge');
+        const checkoutBtn = document.getElementById('checkoutBtn');
+        const addToCartButtons = document.querySelectorAll('.add-to-cart');
+        
+        const deliveryTime = document.getElementById('deliveryTime');
+        const progressBar = document.getElementById('progressBar');
+        const deliveryCar = document.getElementById('deliveryCar');
+        
+        const playBtn = document.getElementById('playBtn');
+        const prevBtn = document.getElementById('prevBtn');
+        const nextBtn = document.getElementById('nextBtn');
+        const playlistItems = document.querySelectorAll('.playlist-item');
+        
+        const premiumSection = document.getElementById('premiumSection');
+        
+        // Payment elements
+        const paymentSection = document.getElementById('paymentSection');
+        const paymentMethods = document.querySelectorAll('.payment-method');
+        const pinSection = document.getElementById('pinSection');
+        const pinInput = document.getElementById('pinInput');
+        const pinDots = document.getElementById('pinDots');
+        const pinKeys = document.querySelectorAll('.pin-key');
+
+        // ===== SOUND EFFECTS =====
+        function playSound(type) {
+            const audio = new Audio();
+            
+            switch(type) {
+                case 'success':
+                    // Success sound (short positive tone)
+                    audio.src = 'data:audio/wav;base64,UklGRigAAABXQVZFZm10IBAAAAABAAEARKwAAIhYAQACABAAZGF0YQQAAAAAAA';
+                    break;
+                case 'error':
+                    // Error sound (short beep)
+                    audio.src = 'data:audio/wav;base64,UklGRigAAABXQVZFZm10IBAAAAABAAEARKwAAIhYAQACABAAZGF0YQQAAAAAAA';
+                    break;
+                case 'notification':
+                    // Notification sound (gentle chime)
+                    audio.src = 'data:audio/wav;base64,UklGRigAAABXQVZFZm10IBAAAAABAAEARKwAAIhYAQACABAAZGF0YQQAAAAAAA';
+                    break;
+            }
+            
+            audio.play().catch(e => console.log("Audio play failed:", e));
+        }
+
+        // ===== PAYMENT SYSTEM =====
+        paymentMethods.forEach(method => {
+            method.addEventListener('click', () => {
+                // Remove selected class from all methods
+                paymentMethods.forEach(m => m.classList.remove('selected'));
+                // Add selected class to clicked method
+                method.classList.add('selected');
+                selectedPaymentMethod = method.getAttribute('data-method');
+                
+                // Show PIN section
+                pinSection.style.display = 'block';
+                resetPin();
+            });
+        });
+
+        // PIN keypad functionality
+        pinKeys.forEach(key => {
+            key.addEventListener('click', () => {
+                const keyValue = key.getAttribute('data-key');
+                
+                if (keyValue === 'clear') {
+                    resetPin();
+                } else if (keyValue === 'enter') {
+                    processPin();
+                } else if (pinCode.length < 4) {
+                    pinCode += keyValue;
+                    updatePinDisplay();
+                }
+            });
+        });
+
+        function resetPin() {
+            pinCode = '';
+            updatePinDisplay();
+            pinInput.classList.remove('shake');
+        }
+
+        function updatePinDisplay() {
+            // Update dots
+            const dots = pinDots.querySelectorAll('.pin-dot');
+            dots.forEach((dot, index) => {
+                if (index < pinCode.length) {
+                    dot.classList.add('filled');
+                } else {
+                    dot.classList.remove('filled');
+                }
+            });
+            
+            // Update input field with masked value
+            pinInput.value = '●'.repeat(pinCode.length);
+        }
+
+        function processPin() {
+            if (pinCode.length !== 4) {
+                // Show error for incomplete PIN
+                pinInput.classList.add('shake');
+                playSound('error');
+                setTimeout(() => {
+                    pinInput.classList.remove('shake');
+                }, 500);
+                return;
+            }
+            
+            // Check if PIN is correct (demo: 1234)
+            if (pinCode === '1234') {
+                // Successful payment
+                playSound('success');
+                showNotification('Payment successful! Your order has been confirmed.');
+                
+                // Start delivery timer
+                startDeliveryTimer();
+                
+                // Clear cart
+                cart = [];
+                updateCartDisplay();
+                
+                // Hide payment section
+                paymentSection.style.display = 'none';
+            } else {
+                // Incorrect PIN
+                pinInput.classList.add('shake');
+                playSound('error');
+                setTimeout(() => {
+                    pinInput.classList.remove('shake');
+                }, 500);
+                resetPin();
+                showNotification('Incorrect PIN. Please try again.', 'error');
+            }
+        }
+
+        // ===== LOGIN SYSTEM =====
+        loginLink.addEventListener('click', (e) => {
+            e.preventDefault();
+            loginModal.style.display = 'flex';
+        });
+
+        closeLogin.addEventListener('click', () => {
+            loginModal.style.display = 'none';
+        });
+
+        loginBtn.addEventListener('click', () => {
+            const email = loginEmail.value;
+            const password = loginPassword.value;
+            
+            // Check credentials (demo: nicholausgabriel123@gmail.com / Nick*123)
+            if (email === 'nicholausgabriel123@gmail.com' && password === 'Nick*123') {
+                isLoggedIn = true;
+                loginModal.style.display = 'none';
+                dashboardLink.style.display = 'block';
+                customerDashboard.style.display = 'block';
+                ladiesGallery.style.display = 'block';
+                premiumSection.style.display = 'block';
+                loginLink.textContent = 'Logout';
+                
+                // Update dashboard with user info
+                document.getElementById('userName').textContent = 'Nicholaus Gabriel';
+                document.getElementById('userEmail').textContent = email;
+                
+                playSound('notification');
+                showNotification('Login successful! Welcome back! Premium products unlocked!');
+            } else {
+                playSound('error');
+                showNotification('Invalid email or password. Please try again.', 'error');
+            }
+        });
+
+        logoutBtn.addEventListener('click', () => {
+            isLoggedIn = false;
+            dashboardLink.style.display = 'none';
+            customerDashboard.style.display = 'none';
+            ladiesGallery.style.display = 'none';
+            premiumSection.style.display = 'none';
+            loginLink.textContent = 'Login';
+            ladyChat.style.display = 'none';
+            showNotification('You have been logged out.');
+        });
+
+        // ===== CART FUNCTIONALITY =====
+        addToCartButtons.forEach(button => {
+            button.addEventListener('click', (e) => {
+                const name = e.target.getAttribute('data-name');
+                const price = parseFloat(e.target.getAttribute('data-price'));
+                const category = e.target.closest('.food-card').getAttribute('data-category');
+                
+                // Check if it's a premium product and user is not logged in
+                if (category === 'premium' && !isLoggedIn) {
+                    playSound('error');
+                    showNotification('Please login to add premium products to cart.', 'error');
+                    loginModal.style.display = 'flex';
+                    return;
+                }
+                
+                // Create fly animation
+                createFlyAnimation(e.target, document.querySelector('.cart-badge'));
+                
+                // Add to cart
+                addToCart(name, price);
+                
+                // Add sparkle effect
+                createSparkles(e.target);
+            });
+        });
+
+        function addToCart(name, price) {
+            const existingItem = cart.find(item => item.name === name);
+            
+            if (existingItem) {
+                existingItem.quantity++;
+            } else {
+                cart.push({ name, price, quantity: 1 });
+            }
+            
+            updateCartDisplay();
+            playSound('notification');
+            showNotification(`${name} added to cart!`);
+        }
+
+        function updateCartDisplay() {
+            // Clear cart items
+            cartItems.innerHTML = '';
+            
+            if (cart.length === 0) {
+                cartItems.innerHTML = '<p class="empty-cart-message">Your cart is empty. Add some delicious food!</p>';
+                checkoutBtn.style.display = 'none';
+                paymentSection.style.display = 'none';
+            } else {
+                checkoutBtn.style.display = 'block';
+                
+                // Add each item to cart display
+                cart.forEach(item => {
+                    const cartItem = document.createElement('div');
+                    cartItem.className = 'cart-item';
+                    cartItem.innerHTML = `
+                        <div>${item.name}</div>
+                        <div class="cart-item-controls">
+                            <button class="quantity-btn minus" data-name="${item.name}">-</button>
+                            <span>${item.quantity}</span>
+                            <button class="quantity-btn plus" data-name="${item.name}">+</button>
+                            <button class="remove-btn" data-name="${item.name}">Remove</button>
+                        </div>
+                        <div>$${(item.price * item.quantity).toFixed(2)}</div>
+                    `;
+                    cartItems.appendChild(cartItem);
+                });
+                
+                // Add event listeners to quantity buttons
+                document.querySelectorAll('.quantity-btn.minus').forEach(btn => {
+                    btn.addEventListener('click', (e) => {
+                        const name = e.target.getAttribute('data-name');
+                        updateCartItem(name, -1);
+                    });
+                });
+                
+                document.querySelectorAll('.quantity-btn.plus').forEach(btn => {
+                    btn.addEventListener('click', (e) => {
+                        const name = e.target.getAttribute('data-name');
+                        updateCartItem(name, 1);
+                    });
+                });
+                
+                document.querySelectorAll('.remove-btn').forEach(btn => {
+                    btn.addEventListener('click', (e) => {
+                        const name = e.target.getAttribute('data-name');
+                        removeFromCart(name);
+                    });
+                });
+            }
+            
+            // Update total and badge
+            const total = cart.reduce((sum, item) => sum + (item.price * item.quantity), 0);
+            cartTotal.textContent = `Total: $${total.toFixed(2)}`;
+            cartBadge.textContent = cart.reduce((sum, item) => sum + item.quantity, 0);
+        }
+
+        function updateCartItem(name, change) {
+            const item = cart.find(item => item.name === name);
+            if (item) {
+                item.quantity += change;
+                
+                if (item.quantity <= 0) {
+                    removeFromCart(name);
+                } else {
+                    updateCartDisplay();
+                }
+            }
+        }
+
+        function removeFromCart(name) {
+            cart = cart.filter(item => item.name !== name);
+            updateCartDisplay();
+            showNotification(`${name} removed from cart.`);
+        }
+
+        checkoutBtn.addEventListener('click', () => {
+            if (cart.length === 0) {
+                playSound('error');
+                showNotification('Your cart is empty.', 'error');
+                return;
+            }
+            
+            // Show payment section
+            paymentSection.style.display = 'block';
+            pinSection.style.display = 'none';
+            selectedPaymentMethod = null;
+            paymentMethods.forEach(m => m.classList.remove('selected'));
+        });
+   // ===== DELIVERY TRACKING =====
+        function startDeliveryTimer() {
+            // Reset timer
+            deliverySeconds = 30 * 60;
+            clearInterval(deliveryInterval);
+            
+            // Adjust delivery time based on number of items
+            const itemCount = cart.reduce((sum, item) => sum + item.quantity, 0);
+            deliverySeconds = Math.max(15 * 60, deliverySeconds + (itemCount * 30)); // Minimum 15 minutes
+            
+            deliveryInterval = setInterval(() => {
+                deliverySeconds--;
+                
+                if (deliverySeconds <= 0) {
+                    clearInterval(deliveryInterval);
+                    deliveryTime.textContent = 'Order Delivered!';
+                    progressBar.style.width = '100%';
+                    deliveryCar.style.left = 'calc(100% - 40px)';
+                    return;
+                }
+                
+                const minutes = Math.floor(deliverySeconds / 60);
+                const seconds = deliverySeconds % 60;
+                deliveryTime.textContent = `Time Remaining: ${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
+                
+                // Update progress bar and car position
+                const progress = ((30 * 60 - deliverySeconds) / (30 * 60)) * 100;
+                progressBar.style.width = `${progress}%`;
+                
+                // Adjust car speed based on number of items
+                const speedFactor = Math.max(0.5, 1 - (itemCount * 0.1));
+                deliveryCar.style.left = `calc(${progress}% - 40px)`;
+                deliveryCar.style.transition = `left ${0.5 * speedFactor}s linear`;
+            }, 1000);
+        }
+
+        // ===== LADIES CHAT =====
+        ladyCards.forEach(card => {
+            card.addEventListener('click', () => {
+                if (!isLoggedIn) {
+                    playSound('error');
+                    showNotification('Please login to access this feature.', 'error');
+                    loginModal.style.display = 'flex';
+                    return;
+                }
+                
+                currentLady = card.getAttribute('data-lady');
+                const ladyName = card.querySelector('.lady-name').textContent;
+                ladyChatTitle.textContent = `Chat with ${ladyName}`;
+                
+                // Clear previous messages
+                ladyMessages.innerHTML = `<div class="message lady">Hi there! Thanks for reaching out. How can I make your day better? 😊</div>`;
+                
+                ladyChat.style.display = 'flex';
+            });
+        });
+
+        closeLadyChat.addEventListener('click', () => {
+            ladyChat.style.display = 'none';
+            currentLady = null;
+        });
+
+        sendLady.addEventListener('click', sendLadyMessage);
+        ladyInput.addEventListener('keypress', (e) => {
+            if (e.key === 'Enter') sendLadyMessage();
+        });
+
+        function sendLadyMessage() {
+            const message = ladyInput.value.trim();
+            if (!message) return;
+            
+            // Add customer message
+            addMessage(ladyMessages, message, 'customer');
+            ladyInput.value = '';
+            
+            // Auto-reply after a delay
+            setTimeout(() => {
+                const randomReply = ladyResponses[Math.floor(Math.random() * ladyResponses.length)];
+                addMessage(ladyMessages, randomReply, 'lady');
+            }, 1000 + Math.random() * 2000);
+        }
+
+        // ===== CUSTOMER SERVICE CHAT =====
+        supportToggle.addEventListener('click', () => {
+            supportChat.style.display = 'flex';
+        });
+
+        closeSupport.addEventList
     
